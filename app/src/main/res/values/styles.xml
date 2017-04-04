@@ -8,4 +8,28 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- button for blue player -->
+    <style name="blueButton" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:background">@color/bluePlayer</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- button for red player -->
+    <style name="redButton" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:background">@color/redPlayer</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
 </resources>

@@ -1,18 +1,122 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.ready4taek.MainActivity">
+    tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:background="@color/bluePlayer"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingBottom="24dp"
+                android:text="0"
+                android:textColor="@color/bluePlayer"
+                android:textSize="56sp" />
+
+            <Button
+                android:text="Torso  +1"
+                style="@style/blueButton"/>
+
+            <Button
+                android:text="Head &amp; Neck  +2"
+                style="@style/blueButton"/>
+
+            <Button
+                android:text="Knock-down  +3"
+                style="@style/blueButton"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <Button
+                android:text="Foul  -1"
+                style="@style/blueButton"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:background="#A12E4C"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingBottom="24dp"
+                android:text="0"
+                android:textColor="@color/redPlayer"
+                android:textSize="56sp" />
+
+            <Button
+                android:text="Torso  +1"
+                style="@style/redButton"/>
+
+            <Button
+                android:text="Head &amp; Neck  +2"
+                style="@style/redButton"/>
+
+            <Button
+                android:text="Knock-down  +3"
+                style="@style/redButton"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <Button
+                android:text="Foul  -1"
+                style="@style/redButton"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="Reset" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
