@@ -1,9 +1,15 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,9 +24,12 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="16dp"
+                android:layout_height="8dp"
                 android:gravity="center"
-                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
                 android:background="@color/bluePlayer"
                 android:textSize="14sp" />
 
@@ -30,36 +39,175 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
-                android:paddingBottom="24dp"
                 android:text="0"
                 android:textColor="@color/bluePlayer"
                 android:textSize="56sp" />
 
-            <Button
-                android:text="Torso  +1"
-                style="@style/blueButton"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <Button
-                android:text="Head &amp; Neck  +2"
-                style="@style/blueButton"/>
+                <TextView
+                    android:text="1"
+                    android:textColor="@color/bluePlayer"
+                    style="@style/scoreStyle"/>
 
-            <Button
-                android:text="Knock-down  +3"
-                style="@style/blueButton"/>
+                <Button
+                    android:text="Front Leg&#10;Torso"
+                    style="@style/buttonStyle"
+                    android:background="@color/bluePlayer"/>
+
+                <TextView
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    style="@style/scoreStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="1"
+                    android:textColor="@color/bluePlayer"
+                    style="@style/scoreStyle"/>
+
+                <Button
+                    android:text="Fist&#10;Torso"
+                    style="@style/buttonStyle"
+                    android:background="@color/bluePlayer"/>
+
+                <TextView
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    style="@style/scoreStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="2"
+                    android:textColor="@color/bluePlayer"
+                    style="@style/scoreStyle"/>
+
+                <Button
+                    android:text="Back Leg&#10;Torso"
+                    style="@style/buttonStyle"
+                    android:background="@color/bluePlayer"/>
+
+                <TextView
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    style="@style/scoreStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="3"
+                    android:textColor="@color/bluePlayer"
+                    style="@style/scoreStyle"/>
+
+                <Button
+                    android:text="Turn Kick"
+                    style="@style/buttonStyle"
+                    android:background="@color/bluePlayer"/>
+
+                <TextView
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    style="@style/scoreStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="3"
+                    android:textColor="@color/bluePlayer"
+                    style="@style/scoreStyle"/>
+
+                <Button
+                    android:text="Kick&#10;Head"
+                    style="@style/buttonStyle"
+                    android:background="@color/bluePlayer"/>
+
+                <TextView
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    style="@style/scoreStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="4"
+                    android:textColor="@color/bluePlayer"
+                    style="@style/scoreStyle"/>
+
+                <Button
+                    android:text="Turn Kick&#10;Head"
+                    style="@style/buttonStyle"
+                    android:background="@color/bluePlayer"/>
+
+                <TextView
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    style="@style/scoreStyle"/>
+
+            </LinearLayout>
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="16dp" />
 
-            <Button
-                android:text="Foul  -1"
-                style="@style/blueButton"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="1"
+                    android:textColor="@color/redPlayer"
+                    style="@style/scoreStyle"/>
+
+                <Button
+                    android:text="Foul"
+                    style="@style/buttonStyle"
+                    android:background="@color/bluePlayer"/>
+
+                <TextView
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    style="@style/scoreStyle"/>
+
+            </LinearLayout>
+
         </LinearLayout>
 
         <View
-            android:layout_width="2dp"
+            android:layout_width="8dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
             android:background="@color/colorPrimaryDark" />
 
         <LinearLayout
@@ -70,9 +218,12 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="16dp"
+                android:layout_height="8dp"
                 android:gravity="center"
-                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
                 android:background="#A12E4C"
                 android:textSize="14sp" />
 
@@ -82,41 +233,180 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
-                android:paddingBottom="24dp"
                 android:text="0"
                 android:textColor="@color/redPlayer"
                 android:textSize="56sp" />
 
-            <Button
-                android:text="Torso  +1"
-                style="@style/redButton"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <Button
-                android:text="Head &amp; Neck  +2"
-                style="@style/redButton"/>
+                <TextView
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    style="@style/scoreStyle"/>
 
-            <Button
-                android:text="Knock-down  +3"
-                style="@style/redButton"/>
+                <Button
+                    android:text="Front Leg&#10;Torso"
+                    style="@style/buttonStyle"
+                    android:background="@color/redPlayer"/>
+
+                <TextView
+                    android:text="1"
+                    android:textColor="@color/redPlayer"
+                    style="@style/scoreStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    style="@style/scoreStyle"/>
+
+                <Button
+                    android:text="Fist&#10;Torso"
+                    style="@style/buttonStyle"
+                    android:background="@color/redPlayer"/>
+
+                <TextView
+                    android:text="1"
+                    android:textColor="@color/redPlayer"
+                    style="@style/scoreStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    style="@style/scoreStyle"/>
+
+                <Button
+                    android:text="Back Leg&#10;Torso"
+                    style="@style/buttonStyle"
+                    android:background="@color/redPlayer"/>
+
+                <TextView
+                    android:text="2"
+                    android:textColor="@color/redPlayer"
+                    style="@style/scoreStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    style="@style/scoreStyle"/>
+
+                <Button
+                    android:text="Turn Kick"
+                    style="@style/buttonStyle"
+                    android:background="@color/redPlayer"/>
+
+                <TextView
+                    android:text="3"
+                    android:textColor="@color/redPlayer"
+                    style="@style/scoreStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    style="@style/scoreStyle"/>
+
+                <Button
+                    android:text="Kick&#10;Head"
+                    style="@style/buttonStyle"
+                    android:background="@color/redPlayer"/>
+
+                <TextView
+                    android:text="3"
+                    android:textColor="@color/redPlayer"
+                    style="@style/scoreStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    style="@style/scoreStyle"/>
+
+                <Button
+                    android:text="Turn Kick&#10;Head"
+                    style="@style/buttonStyle"
+                    android:background="@color/redPlayer"/>
+
+                <TextView
+                    android:text="4"
+                    android:textColor="@color/redPlayer"
+                    style="@style/scoreStyle"/>
+
+            </LinearLayout>
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="16dp" />
 
-            <Button
-                android:text="Foul  -1"
-                style="@style/redButton"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    style="@style/scoreStyle"/>
+
+                <Button
+                    android:text="Foul"
+                    style="@style/buttonStyle"
+                    android:background="@color/redPlayer"/>
+
+                <TextView
+                    android:text="1"
+                    android:textColor="@color/bluePlayer"
+                    style="@style/scoreStyle"/>
+
+            </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="32dp"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:text="Reset" />
 
-</RelativeLayout>
+</LinearLayout>
+
+    </ScrollView>
