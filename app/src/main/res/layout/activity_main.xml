@@ -6,407 +6,436 @@
     android:fillViewport="true"
     tools:context=".MainActivity">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/bluePlayer"
+                    android:gravity="center"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/blue_player_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/bluePlayer"
+                    android:textSize="56sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/scoreStyle"
+                        android:text="1"
+                        android:textColor="@color/bluePlayer" />
+
+                    <Button
+                        style="@style/buttonStyle"
+                        android:background="@color/bluePlayer"
+                        android:onClick="add1Blue"
+                        android:text="Front Leg&#10;Torso" />
+
+                    <TextView
+                        android:id="@+id/blue_data1"
+                        style="@style/scoreStyle"
+                        android:text="0"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/scoreStyle"
+                        android:text="1"
+                        android:textColor="@color/bluePlayer" />
+
+                    <Button
+                        style="@style/buttonStyle"
+                        android:background="@color/bluePlayer"
+                        android:onClick="add2Blue"
+                        android:text="Fist&#10;Torso" />
+
+                    <TextView
+                        android:id="@+id/blue_data2"
+                        style="@style/scoreStyle"
+                        android:text="0"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/scoreStyle"
+                        android:text="2"
+                        android:textColor="@color/bluePlayer" />
+
+                    <Button
+                        style="@style/buttonStyle"
+                        android:background="@color/bluePlayer"
+                        android:onClick="add3Blue"
+                        android:text="Back Leg&#10;Torso" />
+
+                    <TextView
+                        android:id="@+id/blue_data3"
+                        style="@style/scoreStyle"
+                        android:text="0"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/scoreStyle"
+                        android:text="3"
+                        android:textColor="@color/bluePlayer" />
+
+                    <Button
+                        style="@style/buttonStyle"
+                        android:background="@color/bluePlayer"
+                        android:onClick="add4Blue"
+                        android:text="Turn Kick" />
+
+                    <TextView
+                        android:id="@+id/blue_data4"
+                        style="@style/scoreStyle"
+                        android:text="0"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/scoreStyle"
+                        android:text="3"
+                        android:textColor="@color/bluePlayer" />
+
+                    <Button
+                        style="@style/buttonStyle"
+                        android:background="@color/bluePlayer"
+                        android:onClick="add5Blue"
+                        android:text="Kick&#10;Head" />
+
+                    <TextView
+                        android:id="@+id/blue_data5"
+                        style="@style/scoreStyle"
+                        android:text="0"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/scoreStyle"
+                        android:text="4"
+                        android:textColor="@color/bluePlayer" />
+
+                    <Button
+                        style="@style/buttonStyle"
+                        android:background="@color/bluePlayer"
+                        android:onClick="add6Blue"
+                        android:text="Turn Kick&#10;Head" />
+
+                    <TextView
+                        android:id="@+id/blue_data6"
+                        style="@style/scoreStyle"
+                        android:text="0"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/scoreStyle"
+                        android:text="1"
+                        android:textColor="@color/redPlayer" />
+
+                    <Button
+                        style="@style/buttonStyle"
+                        android:background="@color/bluePlayer"
+                        android:onClick="addFoulBlue"
+                        android:text="Foul" />
+
+                    <TextView
+                        android:id="@+id/blue_data_foul"
+                        style="@style/scoreStyle"
+                        android:text="0"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </LinearLayout>
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="8dp"
-                android:gravity="center"
+                android:layout_width="8dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginRight="32dp"
-                android:background="@color/bluePlayer"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/team_a_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@color/bluePlayer"
-                android:textSize="56sp" />
+                android:background="@color/colorPrimaryDark" />
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#A12E4C"
+                    android:gravity="center"
+                    android:textSize="14sp" />
 
                 <TextView
-                    android:text="1"
-                    android:textColor="@color/bluePlayer"
-                    style="@style/scoreStyle"/>
-
-                <Button
-                    android:text="Front Leg&#10;Torso"
-                    style="@style/buttonStyle"
-                    android:background="@color/bluePlayer"/>
-
-                <TextView
+                    android:id="@+id/red_player_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
                     android:text="0"
-                    android:textColor="@color/colorPrimaryDark"
-                    style="@style/scoreStyle"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:text="1"
-                    android:textColor="@color/bluePlayer"
-                    style="@style/scoreStyle"/>
-
-                <Button
-                    android:text="Fist&#10;Torso"
-                    style="@style/buttonStyle"
-                    android:background="@color/bluePlayer"/>
-
-                <TextView
-                    android:text="0"
-                    android:textColor="@color/colorPrimaryDark"
-                    style="@style/scoreStyle"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:text="2"
-                    android:textColor="@color/bluePlayer"
-                    style="@style/scoreStyle"/>
-
-                <Button
-                    android:text="Back Leg&#10;Torso"
-                    style="@style/buttonStyle"
-                    android:background="@color/bluePlayer"/>
-
-                <TextView
-                    android:text="0"
-                    android:textColor="@color/colorPrimaryDark"
-                    style="@style/scoreStyle"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:text="3"
-                    android:textColor="@color/bluePlayer"
-                    style="@style/scoreStyle"/>
-
-                <Button
-                    android:text="Turn Kick"
-                    style="@style/buttonStyle"
-                    android:background="@color/bluePlayer"/>
-
-                <TextView
-                    android:text="0"
-                    android:textColor="@color/colorPrimaryDark"
-                    style="@style/scoreStyle"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:text="3"
-                    android:textColor="@color/bluePlayer"
-                    style="@style/scoreStyle"/>
-
-                <Button
-                    android:text="Kick&#10;Head"
-                    style="@style/buttonStyle"
-                    android:background="@color/bluePlayer"/>
-
-                <TextView
-                    android:text="0"
-                    android:textColor="@color/colorPrimaryDark"
-                    style="@style/scoreStyle"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:text="4"
-                    android:textColor="@color/bluePlayer"
-                    style="@style/scoreStyle"/>
-
-                <Button
-                    android:text="Turn Kick&#10;Head"
-                    style="@style/buttonStyle"
-                    android:background="@color/bluePlayer"/>
-
-                <TextView
-                    android:text="0"
-                    android:textColor="@color/colorPrimaryDark"
-                    style="@style/scoreStyle"/>
-
-            </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="16dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:text="1"
                     android:textColor="@color/redPlayer"
-                    style="@style/scoreStyle"/>
+                    android:textSize="56sp" />
 
-                <Button
-                    android:text="Foul"
-                    style="@style/buttonStyle"
-                    android:background="@color/bluePlayer"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:text="0"
-                    android:textColor="@color/colorPrimaryDark"
-                    style="@style/scoreStyle"/>
+                    <TextView
+                        android:id="@+id/red_data1"
+                        style="@style/scoreStyle"
+                        android:text="0"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <Button
+                        style="@style/buttonStyle"
+                        android:background="@color/redPlayer"
+                        android:onClick="add1Red"
+                        android:text="Front Leg&#10;Torso" />
+
+                    <TextView
+                        style="@style/scoreStyle"
+                        android:text="1"
+                        android:textColor="@color/redPlayer" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/red_data2"
+                        style="@style/scoreStyle"
+                        android:text="0"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <Button
+                        style="@style/buttonStyle"
+                        android:background="@color/redPlayer"
+                        android:onClick="add2Red"
+                        android:text="Fist&#10;Torso" />
+
+                    <TextView
+                        style="@style/scoreStyle"
+                        android:text="1"
+                        android:textColor="@color/redPlayer" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/red_data3"
+                        style="@style/scoreStyle"
+                        android:text="0"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <Button
+                        style="@style/buttonStyle"
+                        android:background="@color/redPlayer"
+                        android:onClick="add3Red"
+                        android:text="Back Leg&#10;Torso" />
+
+                    <TextView
+                        style="@style/scoreStyle"
+                        android:text="2"
+                        android:textColor="@color/redPlayer" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/red_data4"
+                        style="@style/scoreStyle"
+                        android:text="0"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <Button
+                        style="@style/buttonStyle"
+                        android:background="@color/redPlayer"
+                        android:onClick="add4Red"
+                        android:text="Turn Kick" />
+
+                    <TextView
+                        style="@style/scoreStyle"
+                        android:text="3"
+                        android:textColor="@color/redPlayer" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/red_data5"
+                        style="@style/scoreStyle"
+                        android:text="0"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <Button
+                        style="@style/buttonStyle"
+                        android:background="@color/redPlayer"
+                        android:onClick="add5Red"
+                        android:text="Kick&#10;Head" />
+
+                    <TextView
+                        style="@style/scoreStyle"
+                        android:text="3"
+                        android:textColor="@color/redPlayer" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/red_data6"
+                        style="@style/scoreStyle"
+                        android:text="0"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <Button
+                        style="@style/buttonStyle"
+                        android:background="@color/redPlayer"
+                        android:onClick="add6Red"
+                        android:text="Turn Kick&#10;Head" />
+
+                    <TextView
+                        style="@style/scoreStyle"
+                        android:text="4"
+                        android:textColor="@color/redPlayer" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/red_data_foul"
+                        style="@style/scoreStyle"
+                        android:text="0"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <Button
+                        style="@style/buttonStyle"
+                        android:background="@color/redPlayer"
+                        android:onClick="addFoulRed"
+                        android:text="Foul" />
+
+                    <TextView
+                        style="@style/scoreStyle"
+                        android:text="1"
+                        android:textColor="@color/bluePlayer" />
+
+                </LinearLayout>
 
             </LinearLayout>
-
         </LinearLayout>
 
-        <View
-            android:layout_width="8dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="4dp"
-            android:background="@color/colorPrimaryDark" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="32dp"
+            android:background="@color/colorPrimary"
+            android:onClick="resetScore"
+            android:text="Reset"
+            android:textColor="@android:color/white" />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="8dp"
-                android:gravity="center"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginRight="32dp"
-                android:background="#A12E4C"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/team_b_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@color/redPlayer"
-                android:textSize="56sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:text="0"
-                    android:textColor="@color/colorPrimaryDark"
-                    style="@style/scoreStyle"/>
-
-                <Button
-                    android:text="Front Leg&#10;Torso"
-                    style="@style/buttonStyle"
-                    android:background="@color/redPlayer"/>
-
-                <TextView
-                    android:text="1"
-                    android:textColor="@color/redPlayer"
-                    style="@style/scoreStyle"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:text="0"
-                    android:textColor="@color/colorPrimaryDark"
-                    style="@style/scoreStyle"/>
-
-                <Button
-                    android:text="Fist&#10;Torso"
-                    style="@style/buttonStyle"
-                    android:background="@color/redPlayer"/>
-
-                <TextView
-                    android:text="1"
-                    android:textColor="@color/redPlayer"
-                    style="@style/scoreStyle"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:text="0"
-                    android:textColor="@color/colorPrimaryDark"
-                    style="@style/scoreStyle"/>
-
-                <Button
-                    android:text="Back Leg&#10;Torso"
-                    style="@style/buttonStyle"
-                    android:background="@color/redPlayer"/>
-
-                <TextView
-                    android:text="2"
-                    android:textColor="@color/redPlayer"
-                    style="@style/scoreStyle"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:text="0"
-                    android:textColor="@color/colorPrimaryDark"
-                    style="@style/scoreStyle"/>
-
-                <Button
-                    android:text="Turn Kick"
-                    style="@style/buttonStyle"
-                    android:background="@color/redPlayer"/>
-
-                <TextView
-                    android:text="3"
-                    android:textColor="@color/redPlayer"
-                    style="@style/scoreStyle"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:text="0"
-                    android:textColor="@color/colorPrimaryDark"
-                    style="@style/scoreStyle"/>
-
-                <Button
-                    android:text="Kick&#10;Head"
-                    style="@style/buttonStyle"
-                    android:background="@color/redPlayer"/>
-
-                <TextView
-                    android:text="3"
-                    android:textColor="@color/redPlayer"
-                    style="@style/scoreStyle"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:text="0"
-                    android:textColor="@color/colorPrimaryDark"
-                    style="@style/scoreStyle"/>
-
-                <Button
-                    android:text="Turn Kick&#10;Head"
-                    style="@style/buttonStyle"
-                    android:background="@color/redPlayer"/>
-
-                <TextView
-                    android:text="4"
-                    android:textColor="@color/redPlayer"
-                    style="@style/scoreStyle"/>
-
-            </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="16dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:text="0"
-                    android:textColor="@color/colorPrimaryDark"
-                    style="@style/scoreStyle"/>
-
-                <Button
-                    android:text="Foul"
-                    style="@style/buttonStyle"
-                    android:background="@color/redPlayer"/>
-
-                <TextView
-                    android:text="1"
-                    android:textColor="@color/bluePlayer"
-                    style="@style/scoreStyle"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
     </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="32dp"
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:text="Reset" />
-
-</LinearLayout>
-
-    </ScrollView>
+</ScrollView>
